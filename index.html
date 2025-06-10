@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Midsommarfirande</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Glad Midsommar!</h1>
+    <p>Fira sommarens höjdpunkt med mat, dryck, sång och stil!</p>
+  </header>
+
+  <nav>
+    <a href="#historia">Historia</a>
+    <a href="#drinkar">Drinkar</a>
+    <a href="#recept">Recept</a>
+    <a href="#snapsvisor">Snapsvisor</a>
+    <a href="#outfits">Outfits</a>
+  </nav>
+
+  <main>
+    <section id="historia">
+      <h2>Varför firar vi midsommar?</h2>
+      <p>Midsommar är en av Sveriges mest älskade högtider. Ursprungligen en hednisk tradition som hyllade ljuset och fruktbarheten. Idag firar vi med dans, sill och sång!</p>
+    </section>
+
+    <section id="drinkar">
+      <h2>Drinktips</h2>
+      <ul>
+        <li><strong>Flädermojito:</strong> Rom, flädersaft, mynta, lime, sodavatten</li>
+        <li><strong>Jordgubbsbubbel:</strong> Prosecco och färska jordgubbar</li>
+        <li><strong>Svensk Sommar:</strong> Gin, gurka, citron, tonic</li>
+      </ul>
+    </section>
+
+    <section id="recept">
+      <h2>Midsommarmat</h2>
+      <ul>
+        <li>Inlagd sill med färskpotatis</li>
+        <li>Gravad lax med hovmästarsås</li>
+        <li>Västerbottenpaj</li>
+        <li>Jordgubbstårta</li>
+      </ul>
+    </section>
+
+    <section id="snapsvisor">
+      <h2>Snapsvisor</h2>
+      <button onclick="toggleSnapsvisor()">Visa/Dölj visor</button>
+      <div id="visor" class="hidden">
+        <p><strong>Helan går:</strong> Helan går, sjung hopp faderallan lallan lej...</p>
+        <p><strong>O Pilleman:</strong> O Pilleman han hade en liten, liten gumma...</p>
+      </div>
+
+      <h3>Lägg till din egen snapsvisa:</h3>
+      <form id="snapsForm">
+        <input type="text" id="newTitle" placeholder="Titel" required>
+        <textarea id="newText" placeholder="Text..." required></textarea>
+        <button type="submit">Lägg till visa</button>
+      </form>
+      <div id="userVisor"></div>
+    </section>
+
+    <section id="outfits">
+      <h2>Outfit-idéer</h2>
+      <h3>Kvinnor</h3>
+      <ul>
+        <li>Blommig klänning</li>
+        <li>Krans av färska blommor</li>
+        <li>Sandaler</li>
+      </ul>
+
+      <h3>Män</h3>
+      <ul>
+        <li>Ljus linneskjorta</li>
+        <li>Halmhatt eller blomsterkrans</li>
+        <li>Seglarskor</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Midsommar Sverige</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
