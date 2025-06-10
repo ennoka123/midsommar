@@ -1,79 +1,204 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fdf6e3;
-  margin: 0;
-  color: #333;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F8FF; /* Ljusblå (AliceBlue) */
+    color: #333;
+    line-height: 1.6;
 }
 
 header {
-  background-color: #b4e197;
-  text-align: center;
-  padding: 2rem 1rem;
+    background-color: #B0E0E6; /* Ljusblå (PowderBlue) */
+    color: #333;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 5px solid #FFDAB9; /* Ljusrosa (PeachPuff) */
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #4682B4; /* Stålblå */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+header p {
+    font-size: 1.2em;
+    color: #5F9EA0; /* Kadettblå */
 }
 
 nav {
-  background-color: #88c57f;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  padding: 1rem;
+    background-color: #E0FFFF; /* Ljusblå (LightCyan) */
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* För responsivitet */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4682B4; /* Stålblå */
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #FFC0CB; /* Ljusrosa (Pink) */
+    color: #FFFFFF;
 }
 
 main {
-  padding: 2rem;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
 }
 
-section {
-  margin-bottom: 2.5rem;
+.content-section {
+    background-color: #FFFFFF;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    border-left: 8px solid; /* Kommer att ändras per sektion */
 }
 
-h2 {
-  color: #226622;
+/* Färgkombinationer för sektionerna */
+#historia { border-left-color: #ADD8E6; /* Ljusblå */ }
+#drinkar { border-left-color: #90EE90; /* Ljusgrön */ }
+#icarecept { border-left-color: #FFB6C1; /* Ljusrosa */ }
+#kransar { border-left-color: #F0E68C; /* Khaki (en varmgul ton) */ }
+
+
+.content-section h2 {
+    color: #4682B4; /* Stålblå */
+    font-size: 2em;
+    margin-top: 0;
+    cursor: pointer; /* Indikerar att rubriken är klickbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-button {
-  background-color: #88c57f;
-  color: white;
-  border: none;
-  padding: 0.7rem;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-top: 1rem;
+.content-section h2::after {
+    content: '▼'; /* Nedåtpil */
+    font-size: 0.7em;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
 }
 
-button:hover {
-  background-color: #6da562;
+.content-section h2.active::after {
+    content: '▲'; /* Uppåtpil */
+    transform: rotate(0deg); /* Ingen rotation behövs för att vända uppåt */
 }
 
-.hidden {
-  display: none;
+
+.section-content {
+    display: none; /* Dölj som standard */
+    padding-top: 15px;
+    border-top: 1px dashed #DDD;
+    margin-top: 15px;
 }
 
-form {
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+.section-content p {
+    margin-bottom: 15px;
 }
 
-input, textarea {
-  padding: 0.5rem;
-  font-size: 1rem;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  width: 100%;
+.section-content h3 {
+    color: #5F9EA0; /* Kadettblå */
+    font-size: 1.5em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.section-content h4 {
+    color: #6A5ACD; /* Skifferblå */
+    font-size: 1.2em;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.section-content ul, .section-content ol {
+    margin-bottom: 15px;
+    padding-left: 25px;
+}
+
+.section-content ul li, .section-content ol li {
+    margin-bottom: 8px;
+}
+
+.section-content hr {
+    border: 0;
+    border-top: 1px dashed #D3D3D3;
+    margin: 30px 0;
 }
 
 footer {
-  text-align: center;
-  background-color: #b4e197;
-  padding: 1rem;
-  margin-top: 2rem;
+    background-color: #B0E0E6; /* Ljusblå (PowderBlue) */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 5px solid #FFDAB9; /* Ljusrosa (PeachPuff) */
+}
+
+/* Responsivitet */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    .content-section {
+        padding: 20px;
+    }
+
+    .content-section h2 {
+        font-size: 1.7em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+    }
+
+    .content-section {
+        padding: 15px;
+    }
+
+    .content-section h2 {
+        font-size: 1.5em;
+    }
 }

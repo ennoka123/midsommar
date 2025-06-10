@@ -1,89 +1,169 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Midsommarfirande</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midsommar 2025 – Fira med oss!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Glad Midsommar!</h1>
-    <p>Fira sommarens höjdpunkt med mat, dryck, sång och stil!</p>
-  </header>
+    <header>
+        <h1>Glad Midsommar 2025!</h1>
+        <p>Allt du behöver för ett magiskt midsommarfirande</p>
+    </header>
 
-  <nav>
-    <a href="#historia">Historia</a>
-    <a href="#drinkar">Drinkar</a>
-    <a href="#recept">Recept</a>
-    <a href="#snapsvisor">Snapsvisor</a>
-    <a href="#outfits">Outfits</a>
-  </nav>
+    <nav>
+        <ul>
+            <li><a href="#historia">Midsommarhistoria</a></li>
+            <li><a href="#drinkar">Sommardrinkar</a></li>
+            <li><a href="#icarecept">ICA Recept</a></li>
+            <li><a href="#kransar">Kransguide</a></li>
+        </ul>
+    </nav>
 
-  <main>
-    <section id="historia">
-      <h2>Varför firar vi midsommar?</h2>
-      <p>Midsommar är en av Sveriges mest älskade högtider. Ursprungligen en hednisk tradition som hyllade ljuset och fruktbarheten. Idag firar vi med dans, sill och sång!</p>
-    </section>
+    <main>
+        <section id="historia" class="content-section">
+            <h2 onclick="toggleSection('historia-content')">Midsommar – Varför firar vi?</h2>
+            <div id="historia-content" class="section-content">
+                <p>Midsommar är en av de äldsta och mest älskade högtiderna i Sverige. Traditionellt infaller midsommarafton alltid på en fredag mellan den 19 och 25 juni. Det är en fest för att fira sommarsolståndet, årets längsta dag, då ljuset och värmen är som starkast.</p>
+                <p>Högtiden har rötter i förkristna traditioner där man firade fruktbarhet och ljusets seger över mörkret. Man trodde att naturens krafter var som starkast vid denna tid, och ritualer utfördes för att säkra god skörd och lycka. Midsommarstången, eller majstången som den också kallas, är central i firandet. Den är en symbol för liv och fruktbarhet, och runt den dansar man traditionella ringdanser.</p>
+                <p>Andra viktiga inslag är blomsterkransar, jordgubbar, sill och potatis, samt att plocka sju sorters blommor att lägga under kudden för att drömma om sin framtida partner. Det är en tid för glädje, gemenskap och att välkomna sommaren på riktigt!</p>
+            </div>
+        </section>
 
-    <section id="drinkar">
-      <h2>Drinktips</h2>
-      <ul>
-        <li><strong>Flädermojito:</strong> Rom, flädersaft, mynta, lime, sodavatten</li>
-        <li><strong>Jordgubbsbubbel:</strong> Prosecco och färska jordgubbar</li>
-        <li><strong>Svensk Sommar:</strong> Gin, gurka, citron, tonic</li>
-      </ul>
-    </section>
+        <section id="drinkar" class="content-section">
+            <h2 onclick="toggleSection('drinkar-content')">Uppfriskande Sommardrinkar</h2>
+            <div id="drinkar-content" class="section-content">
+                <h3>1. Fläderdröm med Rosmarin</h3>
+                <p>En elegant och uppfriskande drink med smak av sommar.</p>
+                <h4>Ingredienser:</h4>
+                <ul>
+                    <li>4 cl Gin (valfritt, kan uteslutas för alkoholfri variant)</li>
+                    <li>6 cl Fläderblomssaft (koncentrerad)</li>
+                    <li>2 cl Färskpressad citronjuice</li>
+                    <li>Sodavatten</li>
+                    <li>Is</li>
+                    <li>Färsk rosmarin och citronskivor för garnering</li>
+                </ul>
+                <h4>Gör så här:</h4>
+                <ol>
+                    <li>Blanda gin (om du använder), fläderblomssaft och citronjuice i ett glas.</li>
+                    <li>Fyll på med is.</li>
+                    <li>Toppa med sodavatten.</li>
+                    <li>Rör om försiktigt och garnera med en kvist färsk rosmarin och en citronskiva.</li>
+                </ol>
+                <hr>
 
-    <section id="recept">
-      <h2>Midsommarmat</h2>
-      <ul>
-        <li>Inlagd sill med färskpotatis</li>
-        <li>Gravad lax med hovmästarsås</li>
-        <li>Västerbottenpaj</li>
-        <li>Jordgubbstårta</li>
-      </ul>
-    </section>
+                <h3>2. Melon & Mynta Spritzer</h3>
+                <p>Söt och svalkande, perfekt för varma dagar.</p>
+                <h4>Ingredienser:</h4>
+                <ul>
+                    <li>150 g Vattenmelon (kärnfri), tärnad</li>
+                    <li>En liten handfull färsk mynta</li>
+                    <li>2 cl Limejuice</li>
+                    <li>1 tsk Sockerlag (kan uteslutas)</li>
+                    <li>Mousserande vin eller bubbelvatten</li>
+                    <li>Is</li>
+                </ul>
+                <h4>Gör så här:</h4>
+                <ol>
+                    <li>Muddla vattenmelon och mynta försiktigt i botten av ett glas.</li>
+                    <li>Tillsätt limejuice och sockerlag (om du använder).</li>
+                    <li>Fyll glaset med is.</li>
+                    <li>Toppa med mousserande vin eller bubbelvatten.</li>
+                    <li>Rör om försiktigt.</li>
+                </ol>
+                <hr>
 
-    <section id="snapsvisor">
-      <h2>Snapsvisor</h2>
-      <button onclick="toggleSnapsvisor()">Visa/Dölj visor</button>
-      <div id="visor" class="hidden">
-        <p><strong>Helan går:</strong> Helan går, sjung hopp faderallan lallan lej...</p>
-        <p><strong>O Pilleman:</strong> O Pilleman han hade en liten, liten gumma...</p>
-      </div>
+                <h3>3. Rabarber & Jordgubbssangria (Alkoholfri)</h3>
+                <p>En färgsprakande och fruktig sangria som passar alla!</p>
+                <h4>Ingredienser:</h4>
+                <ul>
+                    <li>1 liter Rabarbersaft (färdigköpt eller hemmagjord)</li>
+                    <li>250 g Jordgubbar, skivade</li>
+                    <li>1 Apelsin, skivad</li>
+                    <li>1 Lime, skivad</li>
+                    <li>En handfull färsk mynta</li>
+                    <li>Kolsyrat vatten (för att späda)</li>
+                    <li>Is</li>
+                </ul>
+                <h4>Gör så här:</h4>
+                <ol>
+                    <li>Häll rabarbersaft i en stor kanna.</li>
+                    <li>Lägg i skivade jordgubbar, apelsin och lime.</li>
+                    <li>Tillsätt mynta.</li>
+                    <li>Låt stå i kylen i minst 30 minuter, gärna längre, så smakerna blandas.</li>
+                    <li>Vid servering, späd med kolsyrat vatten efter smak och fyll på med is.</li>
+                </ol>
+            </div>
+        </section>
 
-      <h3>Lägg till din egen snapsvisa:</h3>
-      <form id="snapsForm">
-        <input type="text" id="newTitle" placeholder="Titel" required>
-        <textarea id="newText" placeholder="Text..." required></textarea>
-        <button type="submit">Lägg till visa</button>
-      </form>
-      <div id="userVisor"></div>
-    </section>
+        <section id="icarecept" class="content-section">
+            <h2 onclick="toggleSection('icarecept-content')">Midsommarmat från ICA</h2>
+            <div id="icarecept-content" class="section-content">
+                <p>ICA har massor av fantastiska midsommarrecept! Här är några förslag (du kan söka efter dem på ICA.se för fullständiga recept och instruktioner):</p>
+                <ol>
+                    <li>
+                        <h3>Klassisk Västerbottensostpaj</h3>
+                        <p>En obligatorisk rätt på midsommarbordet! Krämig och smakrik, perfekt till sill och potatis.</p>
+                        <p><em>Sök på "Västerbottensostpaj" på ICA.se för recept.</em></p>
+                    </li>
+                    <li>
+                        <h3>Färskpotatissallad med dill och gräslök</h3>
+                        <p>En fräsch och somrig potatissallad som passar till det mesta.</p>
+                        <p><em>Sök på "Färskpotatissallad dill gräslök" på ICA.se för recept.</em></p>
+                    </li>
+                    <li>
+                        <h3>Jordgubbstårta med grädde och maräng</h3>
+                        <p>Vad vore midsommar utan en härlig jordgubbstårta? En klassiker som garanterat uppskattas.</p>
+                        <p><em>Sök på "Jordgubbstårta maräng" på ICA.se för recept.</em></p>
+                    </li>
+                </ol>
+                <p>Besök <a href="https://www.ica.se/recept/" target="_blank">ICA.se/recept</a> för fler inspiration!</p>
+            </div>
+        </section>
 
-    <section id="outfits">
-      <h2>Outfit-idéer</h2>
-      <h3>Kvinnor</h3>
-      <ul>
-        <li>Blommig klänning</li>
-        <li>Krans av färska blommor</li>
-        <li>Sandaler</li>
-      </ul>
+        <section id="kransar" class="content-section">
+            <h2 onclick="toggleSection('kransar-content')">Gör din egen midsommarkrans!</h2>
+            <div id="kransar-content" class="section-content">
+                <p>Att binda sin egen midsommarkrans är en underbar tradition. Här är en inköpslista för att komma igång:</p>
+                <h3>Inköpslista:</h3>
+                <ul>
+                    <li><strong>Blommor:</strong>
+                        <ul>
+                            <li>Olika sorters sommarblommor (t.ex. prästkragar, blåklint, smörblommor, rödklöver, lupiner).</li>
+                            <li>Gärna även någon fylligare blomma som rosor eller nejlikor för variation.</li>
+                            <li>Gröna blad/kvistar (t.ex. björkris, eklöv, ormbunke) för basen.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Material:</strong>
+                        <ul>
+                            <li>Ståltråd (grön, tunn, ca 0,6-0,8 mm) eller myrtentråd för stommen.</li>
+                            <li>Grön spoltråd/blomstertråd (tunnare än stomtråden) för att fästa blommorna.</li>
+                            <li>Sax eller sekatör.</li>
+                            <li>Eventuellt blomtejp (floratejp) om du vill fästa extra säkert.</li>
+                            <li>Måttband (för att mäta huvudets omkrets).</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Tips när du binder:</h3>
+                <ul>
+                    <li>Mät huvudets omkrets först och gör en stomme av ståltråd som är något större.</li>
+                    <li>Börja med att fästa gröna blad/kvistar runt stommen för en fyllig bas.</li>
+                    <li>Klipp blommorna med korta stjälkar och gruppera dem i små buketter.</li>
+                    <li>Fäst buketterna tätt intill varandra med spoltråden runt stommen, arbeta dig runt kransen.</li>
+                    <li>Variera blommor och färger för ett levande intryck.</li>
+                    <li>Avsluta genom att dölja trådändarna och se till att kransen sitter bekvämt.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
-      <h3>Män</h3>
-      <ul>
-        <li>Ljus linneskjorta</li>
-        <li>Halmhatt eller blomsterkrans</li>
-        <li>Seglarskor</li>
-      </ul>
-    </section>
-  </main>
+    <footer>
+        <p>&copy; 2025 Glad Midsommar! Allt innehåll för Midsommar 2025.</p>
+    </footer>
 
-  <footer>
-    <p>© 2025 Midsommar Sverige</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
