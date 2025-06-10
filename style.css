@@ -2,34 +2,34 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F0F8FF; /* Ljusblå (AliceBlue) */
+    background-color: #F0FFF0; /* Ljusgrön (Honeydew) */
     color: #333;
     line-height: 1.6;
 }
 
 header {
-    background-color: #B0E0E6; /* Ljusblå (PowderBlue) */
+    background-color: #98FB98; /* Ljusgrön (PaleGreen) */
     color: #333;
     padding: 40px 20px;
     text-align: center;
-    border-bottom: 5px solid #FFDAB9; /* Ljusrosa (PeachPuff) */
+    border-bottom: 5px solid #FFDAB9; /* Ljusrosa (PeachPuff) - behålls som accent */
 }
 
 header h1 {
     font-family: 'Pacifico', cursive;
     font-size: 3.5em;
     margin-bottom: 10px;
-    color: #4682B4; /* Stålblå */
+    color: #2E8B57; /* Mörkgrön (SeaGreen) */
     text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
 header p {
     font-size: 1.2em;
-    color: #5F9EA0; /* Kadettblå */
+    color: #3CB371; /* MediumSeaGreen */
 }
 
 nav {
-    background-color: #E0FFFF; /* Ljusblå (LightCyan) */
+    background-color: #E0FFE0; /* Mycket ljusgrön */
     padding: 10px 0;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -41,7 +41,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* För responsivitet */
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -50,7 +50,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #4682B4; /* Stålblå */
+    color: #2E8B57; /* Mörkgrön (SeaGreen) */
     font-weight: bold;
     font-size: 1.1em;
     padding: 8px 15px;
@@ -59,7 +59,7 @@ nav ul li a {
 }
 
 nav ul li a:hover, nav ul li a:focus {
-    background-color: #FFC0CB; /* Ljusrosa (Pink) */
+    background-color: #B0E0E6; /* Ljusblå (PowderBlue) - som accentfärg */
     color: #FFFFFF;
 }
 
@@ -78,38 +78,38 @@ main {
     border-left: 8px solid; /* Kommer att ändras per sektion */
 }
 
-/* Färgkombinationer för sektionerna */
-#historia { border-left-color: #ADD8E6; /* Ljusblå */ }
-#drinkar { border-left-color: #90EE90; /* Ljusgrön */ }
-#icarecept { border-left-color: #FFB6C1; /* Ljusrosa */ }
-#kransar { border-left-color: #F0E68C; /* Khaki (en varmgul ton) */ }
+/* Färgkombinationer för sektionerna - olika pastellgröna nyanser */
+#historia { border-left-color: #90EE90; /* Ljusgrön */ }
+#drinkar { border-left-color: #7CFC00; /* Grön (Lawngreen) - lite intensivare */ }
+#icarecept { border-left-color: #ADFF2F; /* Ljusgrön (GreenYellow) */ }
+#kransar { border-left-color: #3CB371; /* MediumSeaGreen - för en djupare ton */ }
 
 
 .content-section h2 {
-    color: #4682B4; /* Stålblå */
+    color: #2E8B57; /* Mörkgrön (SeaGreen) */
     font-size: 2em;
     margin-top: 0;
-    cursor: pointer; /* Indikerar att rubriken är klickbar */
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .content-section h2::after {
-    content: '▼'; /* Nedåtpil */
+    content: '▼';
     font-size: 0.7em;
     margin-left: 10px;
     transition: transform 0.3s ease;
 }
 
 .content-section h2.active::after {
-    content: '▲'; /* Uppåtpil */
-    transform: rotate(0deg); /* Ingen rotation behövs för att vända uppåt */
+    content: '▲';
+    transform: rotate(0deg);
 }
 
 
 .section-content {
-    display: none; /* Dölj som standard */
+    display: none;
     padding-top: 15px;
     border-top: 1px dashed #DDD;
     margin-top: 15px;
@@ -120,14 +120,14 @@ main {
 }
 
 .section-content h3 {
-    color: #5F9EA0; /* Kadettblå */
+    color: #3CB371; /* MediumSeaGreen */
     font-size: 1.5em;
     margin-top: 25px;
     margin-bottom: 10px;
 }
 
 .section-content h4 {
-    color: #6A5ACD; /* Skifferblå */
+    color: #6B8E23; /* Olivgrön (OliveDrab) */
     font-size: 1.2em;
     margin-top: 15px;
     margin-bottom: 5px;
@@ -149,12 +149,12 @@ main {
 }
 
 footer {
-    background-color: #B0E0E6; /* Ljusblå (PowderBlue) */
+    background-color: #98FB98; /* Ljusgrön (PaleGreen) */
     color: #333;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
-    border-top: 5px solid #FFDAB9; /* Ljusrosa (PeachPuff) */
+    border-top: 5px solid #FFDAB9; /* Ljusrosa (PeachPuff) - behålls som accent */
 }
 
 /* Responsivitet */
